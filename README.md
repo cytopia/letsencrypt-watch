@@ -1,3 +1,3 @@
 # letsencrypt-watch
 
-`certwatch` implementation for letsencrypt certificates
+`certwatch` cron-check implementation for letsencrypt certificates
