@@ -1,6 +1,9 @@
 # letsencrypt-watch
 
-`certwatch` cron-check implementation for letsencrypt certificates
+`certwatch` cron implementation for letsencrypt certificates.
+
+Add this shell script to your cronjob to be notified via email when your certificates reach expiry.
+The default is to notify user root, once the expiry reaches 30 days.
 
 
 ## Usage
