@@ -26,3 +26,7 @@ Put the following example in your cron daily and replace the email with your own
 ```shell
 @daily /path/to/letsencrypt-watch --email=cytopia@everythingcli.org
 ```
+or
+```shell
+0 0 * * * /path/to/letsencrypt-watch --email=cytopia@everythingcli.org
+```
