@@ -1,6 +1,10 @@
 #!/bin/sh -ue
 
 
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+
+
 ############################################################
 # Variables that can be overwritten via cmd args
 ############################################################
