@@ -1,6 +1,6 @@
 # letsencrypt-watch
 
-Independent `certwatch` cron script for [letsencrypt](https://letsencrypt.org) certificates.
+Independent [certwatch](http://linux.die.net/man/1/certwatch) cron script for [letsencrypt](https://letsencrypt.org) certificates.
 
 This was mainly built as I am using [nginx](http://nginx.org/) and the normal `/etc/cron.daily/certwatch` script is not picking up the SSL certificates in my vhosts as it relies on [apache](apache.org) and quits if it is not found:
 ```shell
@@ -37,3 +37,8 @@ or
 ```shell
 0 0 * * * /path/to/letsencrypt-watch --email=cytopia@everythingcli.org
 ```
+
+## Note
+
+* 100% POSIX compatible
+* No [bashism](http://mywiki.wooledge.org/Bashism)
