@@ -1,6 +1,13 @@
 # letsencrypt-watch
 
-`certwatch` cron implementation for letsencrypt certificates. This was build as I am using `nginx` and the normal `certwatch` is not picking up the SSL certificates in my vhosts (I guess for `apache` the normal certwatch cronjob is sufficient).
+Independent `certwatch` cron implementation for letsencrypt certificates.
+
+This was mainly built as I am using `nginx` and the normal `certwatch` cron script is not picking up the SSL certificates in my vhosts as it relies on `apache` and quits if it is not found:
+```shell
+test -x /etc/httpd/modules/libmodnss.so || return 0
+# and
+test -r /etc/httpd/conf/httpd.conf    || return 0
+```
 
 Add this shell script to your cronjob to be notified via email when your certificates reach expiry.
 The default (without arguments) is to notify the root user, once the certificates will expire in 30 days.
