@@ -9,8 +9,8 @@ test -x /etc/httpd/modules/libmodnss.so || return 0
 test -r /etc/httpd/conf/httpd.conf    || return 0
 ```
 
-Add this shell script to your cronjob to be notified via email when your certificates reach expiry.
-The default (without arguments) is to notify the root user, once the certificates will expire in 30 days.
+Add this shell script to your crontab (or copy it to `/etc/cron.daily/`) to be notified via email when your certificates reach expiry.
+The default behavior (without arguments) is to notify the root user, once the certificates will expire in 30 days or less.
 
 
 ## Usage
