@@ -26,7 +26,7 @@ $ letsencrypt-watch [--period=30] [--email=user@mail.tld] [--path=/etc/letsencry
 
 ```
 
-## Example
+## Cronjob
 
 Put the following example in your cron daily and replace the email with your own.
 
